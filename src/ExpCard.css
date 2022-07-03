@@ -1,0 +1,26 @@
+.card-title {
+    text-align: left;
+}
+
+.card-text {
+    text-align: left;
+    padding: 4px;
+}
+
+.company {
+    text-align: left;
+    display: inline-block;
+    width: 50%;
+    font-size: 25px;
+}
+
+.duration {
+    text-align: right;
+    display: inline-block;
+    width: 50%;
+    font-size: 20px;
+}
+
+.card {
+    margin-top:30px;
+}
