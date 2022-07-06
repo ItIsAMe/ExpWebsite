@@ -1,8 +1,11 @@
 import { useState} from 'react';
-import {CNav, CNavItem, CNavLink, CTabContent, CTabPane} from "@coreui/react";
-import ExpCard from "./ExpCard";
+import {CCol, CNav, CNavItem, CNavLink, CRow, CTabContent, CTabPane} from "@coreui/react";
+import ExpCard from "./ExpPage/ExpCard";
 
 import './Nav.css';
+import ProjectCard from "./ProjectPage/ProjectCard";
+import ExpPage from "./ExpPage/ExpPage";
+import ProjectPage from "./ProjectPage/ProjectPage";
 export function Nav() {
     const [activeKey, setActiveKey] = useState(1)
     return (
@@ -29,17 +32,12 @@ export function Nav() {
             </CNav>
             <CTabContent>
                 <CTabPane role="tabpanel" aria-labelledby="home-tab" visible={activeKey === 1}>
-                    <ExpCard title='Full Stack' company='VectorSolv' duration='May 2022-August 2022'></ExpCard>
-                    <br/>
-                    <ExpCard></ExpCard>
-                    <br/>
-                    <ExpCard></ExpCard>
-                    <br/>
-                    <ExpCard></ExpCard>
-                    <br/>
+                    <ExpPage>
+                    </ExpPage>
                 </CTabPane>
                 <CTabPane role="tabpanel" aria-labelledby="profile-tab" visible={activeKey === 2}>
-                    <p>hey</p>
+                    <ProjectPage>
+                    </ProjectPage>
                 </CTabPane>
             </CTabContent>
         </div>

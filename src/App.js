@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import './App.css';
-import ExpCard from "./ExpCard";
 import '@coreui/coreui/dist/css/coreui.min.css';
 import {Nav} from './Nav';
 class App extends Component {
