@@ -6,8 +6,11 @@
     text-align: left;
     padding: 4px;
 }
-
-.company {
+.card-images {
+    height: 100px;
+    width: 100px;
+}
+.title {
     text-align: left;
     display: inline-block;
     width: 50%;
@@ -22,5 +25,10 @@
 }
 
 .card {
-    margin-top:30px;
+    margin-top:50px;
+    margin-bottom:50px;
+}
+
+.accordion-body {
+    font-size: 20px;
 }
