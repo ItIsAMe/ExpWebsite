@@ -3,20 +3,26 @@ import {
     CAccordionBody,
     CAccordionHeader, CAccordionItem,
     CCard,
-    CCardBody, CCardImage,
+    CCardBody, CCardImage, CCardImageOverlay,
     CCardText,
     CCardTitle
 } from "@coreui/react";
 import {Component} from 'react';
 
 import './ExpCard.css';
+import {techChips} from "../fadeInFunc";
 
 class ExpCard extends Component {
     render() {
         return (
-            <CCard style={{width: '60rem'}}>
+            <CCard>
             <CCardBody>
                 <CCardImage className={"card-images"} src={this.props.logo} />
+                <CCardImageOverlay>
+                    <div className={'hidden'}>
+                        {techChips(this.props.technologies)}
+                    </div>
+                </CCardImageOverlay>
                 <CCardTitle>
                     Company: {this.props.company}</CCardTitle>
                 <CCardText>
@@ -42,7 +48,6 @@ class ExpCard extends Component {
         );
     }
 }
-
 function print(sentences) {
     if (sentences!= null) {
         return sentences.map(str => <p>{str}</p>);

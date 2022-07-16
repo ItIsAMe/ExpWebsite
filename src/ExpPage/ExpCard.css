@@ -1,3 +1,4 @@
+
 .card-title {
     text-align: left;
 }
@@ -27,8 +28,25 @@
 .card {
     margin-top:50px;
     margin-bottom:50px;
+    transition: transform .2s;
+    width: 60rem;
 }
 
+.hidden {
+    visibility: hidden;
+}
+.card:hover {
+    transform: scale(1.05);
+}
+.card:hover .hidden {
+    visibility: visible;
+}
 .accordion-body {
     font-size: 20px;
+}
+
+.chip {
+    float: right;
+    margin-left: 2px;
+    margin-bottom: 2px;
 }

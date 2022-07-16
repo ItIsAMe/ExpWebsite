@@ -1,9 +1,6 @@
 import { useState} from 'react';
-import {CCol, CNav, CNavItem, CNavLink, CRow, CTabContent, CTabPane} from "@coreui/react";
-import ExpCard from "./ExpPage/ExpCard";
-
+import {CNav, CNavItem, CNavLink, CTabContent, CTabPane} from "@coreui/react";
 import './Nav.css';
-import ProjectCard from "./ProjectPage/ProjectCard";
 import ExpPage from "./ExpPage/ExpPage";
 import ProjectPage from "./ProjectPage/ProjectPage";
 export function Nav() {
