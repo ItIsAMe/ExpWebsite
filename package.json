@@ -2,6 +2,9 @@
   "name": "website-exp",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "16.14.2"
+  },
   "dependencies": {
     "@coreui/react": "^4.2.2",
     "@emotion/react": "^11.9.3",
