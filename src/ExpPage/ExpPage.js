@@ -13,7 +13,7 @@ class ExpPage extends Component {
                 <FadeInSection key={'VectorSolv'}>
                     <ExpCard title='Full Stack' company='VectorSolv' duration='May 2022-August 2022' logo={VectorSolvLogo} accomplishments={["•	Integrated Dwolla, a payments API to allow the transfer of reimbursements in a new insurance product.",
                         "•	Coded the logging solution for the backend, logging the calls and responses of the API, CQRS handlers, and CQRS sagas.",
-                        "•	Programmed the display of agreements, to take an html rich text and display the agreement as a pdf without losing the formatting, to allow users to see agreements of products they have bought."]
+                        "•	Programmed in TypeScript the display of an html text as a pdf maintaining its format, to allow users to see their previous purchase agreements"]
                     } technologies={["HTML", "CSS","TypeORM","CQRS","Rxjs","Nestjs","Angular"]}/>
                 </FadeInSection>
                 <FadeInSection key={'RCMP'}>
